@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "root" {
   name     = "root"
   location = "West Europe"
   tags = {
-    app       = "Mangekampen"
+    app       = "Demo"
     managedBy = "Terraform"
   }
 }
@@ -16,7 +16,7 @@ resource "azurerm_service_plan" "demo-asp" {
   os_type             = "Linux"
   sku_name            = "B1"
   tags = {
-    app       = "Mangekampen"
+    app       = "demo"
     managedBy = "Terraform"
   }
 }
