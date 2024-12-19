@@ -39,7 +39,7 @@ resource "azurerm_key_vault" "demo-kv" {
   name                       = "demoappkeyvault2024"
   location                   = azurerm_resource_group.root.location
   resource_group_name        = azurerm_resource_group.root.name
-  tenant_id                  = ""
+  tenant_id                  = "e55fe2f3-baa4-4436-9c28-92e8383cd851"
   soft_delete_retention_days = 7
 
   sku_name = "standard"

@@ -1,4 +1,5 @@
 terraform {
+  backend "azurerm" {} ## added this to refer to global state file
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -13,3 +14,4 @@ provider "azurerm" {
   subscription_id = ""
   tenant_id       = ""
 }
+
